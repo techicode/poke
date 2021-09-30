@@ -11,7 +11,6 @@ const getData = async () => {
     pokeImg.src = pokemon.data.sprites.front_default;
 }
 
-
 const getPoke = async (pokeID) => {
     return await axios.get(`https://pokeapi.co/api/v2/pokemon/${pokeID}/`);
 }

@@ -1,0 +1,52 @@
+.hp-bar {
+    background-color: #ff0d12;
+}
+
+.attack-bar {
+    background-color: #f57e38;
+}
+
+.defense-bar {
+    background-color: #ffce45;
+}
+
+.spatk-bar {
+    background-color: #638fef;
+}
+
+.spdef-bar {
+    background-color: #75c460;
+}
+
+.speed-bar {
+    background-color: #ff5c8c;
+}
+
+.stats-text {
+    color: #343434;
+    opacity: 100%;
+}
+
+.text-gray {
+    color: #5c5c5c;
+}
+
+.bg {
+    background-color: #30a6ea;
+}
+
+.main-bg {
+    background: linear-gradient(to bottom, rgba(48, 166, 234, 0) 28vh, #fff 100px);
+    margin: 0;
+    min-height: 100vh;
+}
+
+img {
+    width: 50%;
+}
+
+@media only screen and (min-device-width: 700px) {
+    img {
+        width: 25%;
+    }
+}
