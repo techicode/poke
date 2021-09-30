@@ -4,45 +4,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+          integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/poketypes.css">
     <title>Pokemon</title>
 </head>
 
 <body>
-    <div class="full-page container">
-        <div class="poke-box container">
-            <div class="search-tab row">
-                <div class="left-title-search col">
-                    <label for="search-poke" class="col-form-label">Search Pokemon</label>
-                </div>
-                <div class="col search-input">
-                    <input class="form-control border-dark" type="text" id="search-poke">
-                </div>
-                <div class="col search-button">
-                    <button class="btn btn-outline-dark" id="search-button">Search</button>
-                </div>
-            </div>
-
-            <div class="results-box container">
-                <div class="card mb-3" style="max-width: 540px;">
-                    <div class="row g-2">
-                        <div class="col-md-3 gy-3">
-                            <img id="poke-img" src="" class="img-fluid mx-auto d-block" alt="...">
+    <div class="container">
+        <div class="row justify-content-center bg">
+            <div class="col-11 col-md-9 rounded mt-2 main-bg">
+                <div class="row text-center justify-content-center">
+                    <div class="col-10 col-xs-8 col-sm-8 col-md-6">
+                        <div class="input-group mt-2">
+                            <input type="text" class="form-control" id="search-poke" placeholder="Pokemon's ID #"
+                                   aria-label="Recipient's username" aria-describedby="search-button">
+                            <button class="btn btn-success " type="button" id="search-button">Search</button>
                         </div>
-                        <div class="poke-card col-md-8">
-                            <div class="card-body">
-                                <h5 id="poke-name" class="card-title">Card title</h5>
-                                <p id="poke-data" class="card-text">This is a wider card with supporting text below as a
-                                    natural lead-in to additional content. This content is a little bit longer.</p>
+                    </div>
+                    <div class="row mt-2">
+                        <div class="col">
+                            <h1 id="poke-name">Venusaur</h1>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <span class="text-gray fw-ligh" id="poke-number">#003</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <img class="img-fluid" id="poke-img"
+                                 src="#"
+                                 alt="">
+                        </div>
+                    </div>
+
+                    <div class="row pt-3 wrapper" id="poke-types">
+
+                    </div>
+
+                    <div class="row justify-content-center stats-text text-start pt-4">
+                        <div class="col-6 mt-1">
+                            <span>HP: <span id="hp-data"></span></span>
+                            <div class="progress">
+                                <div class="progress-bar hp-bar" role="progressbar" style="width: 80%"
+                                     aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                         </div>
+                        <div class="col-6 mt-1">
+                            <span>Attack: <span id="attack-data"></span></span>
+                            <div class="progress">
+                                <div class="progress-bar attack-bar" role="progressbar" style="width: 82%"
+                                     aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <div class="col-6 mt-2">
+                            <span>Defense: <span id="defense-data"></span></span>
+                            <div class="progress">
+                                <div class="progress-bar defense-bar" role="progressbar" style="width: 83%"
+                                     aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <div class="col-6 mt-2">
+                            <span>SP Attack: <span id="spatk-data"></span></span>
+                            <div class="progress">
+                                <div class="progress-bar spatk-bar" role="progressbar" style="width: 100%"
+                                     aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <div class="col-6 mt-2 mb-4">
+                            <span>SP Defense: <span id="spdef-data"></span></span>
+                            <div class="progress">
+                                <div class="progress-bar spdef-bar" role="progressbar" style="width: 100%"
+                                     aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <div class="col-6 mt-2 mb-4">
+                            <span>Speed: <span id="speed-data"></span></span>
+                            <div class="progress">
+                                <div class="progress-bar speed-bar" role="progressbar" style="width: 80%"
+                                     aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
+            <!--            TODO
+            ADD next 3 Pokémon
+            add info footer (git, etc.)
+            -->
 
         </div>
     </div>
