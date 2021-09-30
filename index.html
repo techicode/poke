@@ -32,55 +32,62 @@
                     </div>
                     <div class="row">
                         <div class="col">
-                            <span class="text-gray fw-ligh">#003</span>
+                            <span class="text-gray fw-ligh" id="poke-number">#003</span>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col">
-                            <img class="img-fluid" id="poke-img" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/female/3.png" alt="">
+                            <img class="img-fluid" id="poke-img"
+                                 src="#"
+                                 alt="">
                         </div>
                     </div>
 
-                    <div class="row pt-3 wrapper">
-                        <img class="icon grass" src="https://duiker101.github.io/pokemon-type-svg-icons/icons/grass.svg" alt="">
-                        <img class="icon poison" src="https://duiker101.github.io/pokemon-type-svg-icons/icons/poison.svg" alt="">
+                    <div class="row pt-3 wrapper" id="poke-types">
+
                     </div>
 
                     <div class="row justify-content-center stats-text text-start pt-4">
                         <div class="col-6 mt-1">
-                            <span>HP: 80</span>
+                            <span>HP: <span id="hp-data"></span></span>
                             <div class="progress">
-                                <div class="progress-bar hp-bar" role="progressbar" style="width: 80%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar hp-bar" role="progressbar" style="width: 80%"
+                                     aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                         </div>
                         <div class="col-6 mt-1">
-                            <span>Attack: 82</span>
+                            <span>Attack: <span id="attack-data"></span></span>
                             <div class="progress">
-                                <div class="progress-bar attack-bar" role="progressbar" style="width: 82%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar attack-bar" role="progressbar" style="width: 82%"
+                                     aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                         </div>
                         <div class="col-6 mt-2">
-                            <span>Defense: 83</span>
+                            <span>Defense: <span id="defense-data"></span></span>
                             <div class="progress">
-                                <div class="progress-bar defense-bar" role="progressbar" style="width: 83%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar defense-bar" role="progressbar" style="width: 83%"
+                                     aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                         </div>
                         <div class="col-6 mt-2">
-                            <span>SP Attack: 100</span>
+                            <span>SP Attack: <span id="spatk-data"></span></span>
                             <div class="progress">
-                                <div class="progress-bar spatk-bar" role="progressbar" style="width: 100%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar spatk-bar" role="progressbar" style="width: 100%"
+                                     aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                         </div>
                         <div class="col-6 mt-2 mb-4">
-                            <span>SP Defense: 100</span>
+                            <span>SP Defense: <span id="spdef-data"></span></span>
                             <div class="progress">
-                                <div class="progress-bar spdef-bar" role="progressbar" style="width: 100%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar spdef-bar" role="progressbar" style="width: 100%"
+                                     aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                         </div>
                         <div class="col-6 mt-2 mb-4">
-                            <span>Speed: 80</span>
+                            <span>Speed: <span id="speed-data"></span></span>
                             <div class="progress">
-                                <div class="progress-bar speed-bar" role="progressbar" style="width: 80%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar speed-bar" role="progressbar" style="width: 80%"
+                                     aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                         </div>
 
